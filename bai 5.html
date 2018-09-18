@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    stars = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    names = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let j = 1;
+    function findStars(){
+        let enter = document.getElementById("input").value;
+        for(let i in stars){
+            if(enter === stars[i]){
+                j = 0;
+                alert(names[i]);
+                return;
+            }
+        }
+        if(j === 1){
+            alert("Không tìm thấy");
+        }
+    }
+</script>
+</body>
+</html>
